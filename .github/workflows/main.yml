@@ -28,7 +28,7 @@ jobs:
       run: echo "Build Successful"
 
     - name: Test Stage
-      run: echo "Test Successful"
+      run: echo "Tests Successful"
 
   deploy:
 
@@ -42,7 +42,9 @@ jobs:
       uses: appleboy/ssh-action@master
 
       with:
-       APP_KEY: ${{ secrets.APP_KEY }} 
+        APP_KEY: ${{ secrets.APP_KEY }}
+        
+        
 
         script: |
           cd /home/ec2-user/GitCICD-REPO
