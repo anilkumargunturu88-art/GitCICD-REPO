@@ -42,9 +42,7 @@ jobs:
       uses: appleboy/ssh-action@master
 
       with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ${{ secrets.EC2_USERNAME }}
-        key: ${{ secrets.EC2_SSH_KEY }}
+       APP_KEY: ${{ secrets.APP_KEY }} 
 
         script: |
           cd /home/ec2-user/GitCICD-REPO
