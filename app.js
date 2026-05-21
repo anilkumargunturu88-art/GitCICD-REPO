@@ -1,10 +1,19 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.write('CI/CD Pipeline Working Successfully');
+  res.write('GitHub Actions Deployment Successful');
   res.end();
 });
 
 server.listen(3000);
 
-console.log("Application running on port 3000");
+console.log("Running on port 3000");
+
+
+
+
+
+
+
+
+
